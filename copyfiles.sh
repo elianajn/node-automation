@@ -16,3 +16,4 @@ cp /etc/sysconfig/network-scripts/ifcfg-em2 $FOLDER
 cp /etc/sysctl.conf $FOLDER
 cp /etc/fstab $FOLDER
 cp /root/.ssh/authorized_keys $FOLDER
+cp /etc/sudoers $FOLDER
