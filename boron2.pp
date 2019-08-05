@@ -107,7 +107,11 @@ exec { 'ntpq_-c_pe':
   command => "ntpq -c pe",
   path => '/sbin:/bin:/usr/sbin:/usr/bin',
 }
-service{ [ 'ntpd', 'opensm']:
+exec { 'selinux':
+  command => "setsebool -P use_nfs_home_dirs 1",
+  path => '/sbin:/bin:/usr/sbin:/usr/bin',
+}
+service{ [ 'ntpd', 'opensm', 'sshd']:
 	ensure => 'running',
 	enable => 'true',
 }
