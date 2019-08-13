@@ -1,0 +1,12 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Fri Jan  7 04:22:41 2011
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/centos_boron2-root /                       xfs     defaults        0 0
+UUID=453971f3-4dd5-4671-87e5-6f70c39ac033 /boot                   xfs     defaults        0 0
+/dev/mapper/centos_boron2-swap swap                    swap    defaults        0 0
+boron1:/home  /home    nfs    defaults    0 0
