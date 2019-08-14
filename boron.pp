@@ -1,4 +1,4 @@
-$folder="/opt/puppetlabs/puppet/manifests/boron/boron2"
+$folder="/opt/puppetlabs/puppet/manifests/boron/boron"
 package { ['ntp', 'ntpdate', 'nfs-utils', 'libibverbs-utils', 'infiniband-diags', 'ibutils', 'perftest', 'libmlx4', 'libibverbs', 'opensm', 'net-tools', 'openmpi', 'openmpi-devel', 'freeipmi', 'rpm-build', 'bzip2-devel', 'perl-ExtUtils-MakeMaker', 'perl-Switch', 'openssl', 'openssl-devel', 'pam-devel', 'readline-devel', 'mariadb-devel', 'mariadb-server'] :
   ensure => 'installed',
 }
